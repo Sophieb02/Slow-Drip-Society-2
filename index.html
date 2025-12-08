@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slow Drip Society</title>
+  <link href="style-index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div class="page-bg">
+    <div class="wrapper wrapper-hero">
+      <header class="header">
+        <p class="site-id">
+          <a class="index-button" href="index.html">Slow Drip Society</a>
+        </p>
+        <p class="tagline">brew. connect. create</p>
+
+        <nav class="top-menu">
+          <ul>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="brewmethods.html" class="nav-link">Brew Methods</a></li>
+            <li><a href="community.html" class="nav-link">Community</a></li>
+            <li><a href="workscited.html" class="nav-link">Works Cited</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="hero-kicker">Slow Drip Society</p>
+          <a class="primary-button" href="brewmethods.html">Begin the Brew</a>
+        </section>
+      </main>
+    </div>
+  </div>
+
+ 
+  <section class="join-section">
+    <div class="join-inner">
+      <h2 class="join-title">Join the Community</h2>
+      <p class="join-subtitle">Pay-as-you-go from $25 per active customer.</p>
+      <a href="community.html" class="secondary-button">Get started</a>
+    </div>
+  </section>
+
+
+  <section class="page-bg page-bg-content">
+    <div class="wrapper wrapper-content">
+      <div class="content-hero">
+        <h1 class="content-title">Mindful Coffee<br>Culture</h1>
+      </div>
+
+      <div class="content-card">
+        <div class="content-text">
+          <h3>Slow Drip Society</h3>
+          <p>
+            Slow Drip Society is a design exploration into the ritual of coffee making.
+            We believe that great design, like great coffee, requires patience, attention
+            to detail, and an appreciation for the process itself.
+          </p>
+          <p>
+            Each brewing method tells a story of craftsmanship. From the precise pour-over
+            to the immersive cold brew, we celebrate the intersection of design thinking
+            and mindful practice. This is where creativity meets ritual.
+          </p>
+          <a href="about.html" class="secondary-button">Learn more</a>
+        </div>
+        <div class="content-image">
+         
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <p class="footer-heading">Company</p>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Careers</a>
+        <a href="#" class="footer-link">Pricing</a>
+        <a href="#" class="footer-link">Customers</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">Resources</p>
+        <a href="#" class="footer-link">Documentation</a>
+        <a href="#" class="footer-link">Papers</a>
+        <a href="#" class="footer-link">Press</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">Legal</p>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Cookies Policy</a>
+        <a href="#" class="footer-link">Data Processing</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Slow Drip Society</p>
+    </div>
+  </footer>
+
+
+  <script>
+    (function () {
+      const path = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".nav-link").forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === path || (path === "index.html" && href === "index.html")) {
+          link.classList.add("active");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

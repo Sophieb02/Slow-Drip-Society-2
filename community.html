@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community – Slow Drip Society</title>
+ 
+  <link href="style-index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ 
+  <div class="page-bg">
+    <div class="wrapper wrapper-hero">
+      <header class="header">
+        <p class="site-id">
+          <a class="index-button" href="index.html">Slow Drip Society</a>
+        </p>
+        <p class="tagline">brew. connect. create</p>
+
+        <nav class="top-menu">
+          <ul>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="brewmethods.html" class="nav-link">Brew Methods</a></li>
+            <li><a href="community.html" class="nav-link">Community</a></li>
+            <li><a href="workscited.html" class="nav-link">Works Cited</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero--simple">
+          <p class="hero-kicker">Slow Drip Society</p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  
+  <section class="page-section">
+    <h1 class="page-section-title">Community</h1>
+
+    <p>
+      Coffee brings people together. From the barista perfecting their craft to the designer
+      finding focus in their morning ritual, we all share a connection through this simple
+      beverage. Slow Drip Society celebrates this community — those who take time to brew
+      thoughtfully, create intentionally, and appreciate the process as much as the result.
+    </p>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <p class="footer-heading">Company</p>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Careers</a>
+        <a href="#" class="footer-link">Pricing</a>
+        <a href="#" class="footer-link">Customers</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">Resources</p>
+        <a href="#" class="footer-link">Documentation</a>
+        <a href="#" class="footer-link">Papers</a>
+        <a href="#" class="footer-link">Press</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">Legal</p>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Cookies Policy</a>
+        <a href="#" class="footer-link">Data Processing</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Slow Drip Society</p>
+    </div>
+  </footer>
+
+  
+  <script>
+    (function () {
+      const path = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".nav-link").forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === path || (path === "index.html" && href === "index.html")) {
+          link.classList.add("active");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
