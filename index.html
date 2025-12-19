@@ -69,7 +69,11 @@
         </div>
         <div class="content-image">
          
-          <div class="image-placeholder"></div>
+            <img 
+    src="img/rizky-subagja-1k7TnX5GAww-unsplash.jpg"
+    alt="Quiet coffee ritual scene"
+    class="content-img"
+  >
         </div>
       </div>
     </div>
@@ -108,16 +112,5 @@
   </footer>
 
 
-  <script>
-    (function () {
-      const path = window.location.pathname.split("/").pop() || "index.html";
-      document.querySelectorAll(".nav-link").forEach(link => {
-        const href = link.getAttribute("href");
-        if (href === path || (path === "index.html" && href === "index.html")) {
-          link.classList.add("active");
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
